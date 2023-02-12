@@ -1,0 +1,108 @@
+.events {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .events__title {
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .events__body {
+    margin-top: 30px;
+    .events__mainEvent {
+      width: 95%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 30px;
+      background: rgba(247, 188, 117, 1);
+      border-radius: 20px;
+      @media (max-width: 800px) {
+        flex-direction: column;
+        padding: 20px 0px;
+        button {
+          margin-top: 20px;
+        }
+      }
+      @media (max-width: 400px) {
+        border-radius: 10px;
+      }
+      .events__flex {
+        display: flex;
+        @media (max-width: 800px) {
+          flex-direction: column;
+        }
+        .events__date {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .events__day {
+            font-size: 68px;
+            @media (max-width: 800px) {
+              font-size: 54px;
+            }
+          }
+          .events__month {
+            font-size: 25px;
+          }
+        }
+        .events__info {
+          margin-left: 100px;
+          @media (max-width: 800px) {
+            margin-left: 30px;
+          }
+          @media (max-width: 600px) {
+            margin-left: 0px;
+          }
+          .events__title {
+            font-size: 36px;
+            line-height: 26px;
+            @media (max-width: 800px) {
+              text-align: center;
+              font-size: 30px;
+            }
+            @media (max-width: 350px) {
+              font-size: 24px;
+            }
+          }
+          .events__subtitle {
+            margin-top: 30px;
+            max-width: 500px;
+            font-size: 16px;
+            line-height: 24px;
+            color: #333;
+            @media (max-width: 350px) {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .events__button {
+        background: #f7bc75;
+        border-radius: 20px;
+        cursor: pointer;
+        width: 225px;
+        height: 60px;
+        @media (max-width: 400px) {
+          width: 90%;
+          height: 50px;
+        }
+        &:hover {
+          background: #000;
+          color: #fff;
+        }
+      }
+    }
+    .events__events {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @media(max-width: 1350px){
+        justify-content: space-evenly;
+      }
+    }
+  }
+}
